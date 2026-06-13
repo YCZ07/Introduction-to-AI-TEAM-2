@@ -1,0 +1,2 @@
+pip install torch diffusers transformers accelerate
+pip install gradio librosa matplotlib numpy pillow torch
