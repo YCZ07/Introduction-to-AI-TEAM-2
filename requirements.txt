@@ -1,2 +1,32 @@
-pip install torch diffusers transformers accelerate
-pip install gradio librosa matplotlib numpy pillow torch
+# ==========================================================
+# 음향 스펙트로그램 기반 이미지 생성기 - 필요 라이브러리
+# 설치 방법: pip install -r requirements.txt
+# (Python 3.9 ~ 3.11 권장)
+# ==========================================================
+
+# --- AI 모델 (Stable Diffusion) ---
+torch>=2.0.0
+diffusers>=0.27.0
+transformers>=4.38.0
+accelerate>=0.27.0
+safetensors>=0.4.0
+
+# --- 웹 UI ---
+gradio>=4.0.0
+
+# --- 오디오 처리 ---
+librosa>=0.10.0
+soundfile>=0.12.1        # librosa 오디오 로딩 백엔드 (wav 등)
+
+# --- 시각화 / 데이터 / 이미지 ---
+matplotlib>=3.7.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# ==========================================================
+# [주의] 아래는 pip가 아닌 시스템(OS) 설치가 필요합니다.
+#   - ffmpeg : mp3 등 일부 오디오 포맷 디코딩에 필요
+#       Windows : https://ffmpeg.org 에서 다운로드 후 PATH 등록
+#       macOS   : brew install ffmpeg
+#       Ubuntu  : sudo apt install ffmpeg
+# ==========================================================
