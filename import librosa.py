@@ -54,12 +54,12 @@ if __name__ == "__main__":
     
     # 확장자가 wav인지 mp3인지 모르겠다면 아래 둘 중 맞는 것으로 주석(#)을 풀어서 쓰세요!
     # 1. 파일이 MP3 파일일 때:
-    test_audio = "테스트1.mp3" 
+    test_audio = r"C:\Users\user\Downloads\인개론\테스트1.mp3"
     
     # 2. 파일이 WAV 파일일 때 (위의 mp3가 아니라면 이 줄 맨 앞의 #을 지우고 위를 주석처리 하세요):
     # test_audio = "테스트1.wav" 
     
-    output_image = "test_spectrogram.png"
+    output_image = r"C:\Users\user\Downloads\인개론\test_spectrogram.png"
     
     print(f"[{test_audio}] 파일을 스펙트로그램으로 변환합니다...")
     result = convert_audio_to_spectrogram(test_audio, output_image)
